@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajay Panwar</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="site-main-wrapper">
+        <button class="hamburger">
+            <img src="./images/hamberger.svg" alt="" srcset="">
+        </button>
+
+        <button class="arrow-up" onclick="goUp()">
+            <img src="./images/arrow-up.svg" alt="" srcset="">
+        </button>
+
+        <div class="mobile-nav">
+            <button class="times"><img src="./images/times.svg" alt="" srcset=""></button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#work-experience">Work Experience</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <header>
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <img src="images/logo.svg" alt="">
+                        </div>
+                        <div>
+                            <a href="#">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#work-experience">Work Expereience</a>
+                        </div>
+                    </div>
+                    <div class="right">
+                        <button class="btn btn-primary" onclick="goToContact()">Contact</button>
+                    </div>
+                </nav>
+    
+                <div class="hero flex items-center">
+                    <div class="left flex-1 flex justify-center">
+                        <img src="images/mypic-3.png" alt="">
+                    </div>
+                    <div class="right flex-1">
+                        <h6>Ajay Panwar</h6>
+                        <h1>I'm a Software <span>Engineer</span></h1>
+                        <p>To make a meaningful impact on the lives of people around the globe, through a highly technical and analytical Software Engineer’s vision and provide with plethora of solutions to critical yet interesting problems.
+                        </p>
+                        <div>
+                            <button class="btn btn-secondary" type="submit" onclick="window.open('./files/Resume.pdf')">DOWNLOAD CV</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+        <section id="about" class="about">
+            <div class="container flex items-center about-inner-wrap">
+                <div class="flex-1">
+                    <img class="about-me-image" src="images/mypic.jpg" alt="">
+                </div>
+                <div class="flex-1 right">
+                    <h1> About <span>Me</span></h1>
+                    <h3>Hello! I'm Ajay Singh Panwar.</h3>
+                    <p>I am a 2021 passout grad. Recently completed my Bachelor in Computer Science Engineering. Currently I am a Software Engineer Intern at NCR Corporation India Pvt. Ltd. Soon I'll be joining NCR as a full-time Software Engineer. Currenty I am working on Microsoft Technologies(.Net framework). Apart from that, for my self learning, I am learning MERN full-stack and you are currently on my first project which is under development ;)</p>
+                    <div class="social">
+                        <a href="#"> <img src="./images/website.svg" alt=""> </a>
+                        <a href="#"> <img src="./images/facebook.svg" alt=""> </a>
+                        <a href="#"> <img src="./images/instagram.svg" alt=""> </a>
+                        <a href="#"> <img src="./images/github.svg" alt=""> </a>
+                        <a href="#"> <img src="./images/twitter.svg" alt=""> </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <section id="projects" class="projects">
+            <div class="container">
+                <h1 class="section-heading">
+                    <span>My</span> Projects
+                </h1>
+                <p>It includes my college as well as personal major projects.</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="images/security.svg" alt="">
+                        <h2>Safety App</h2>
+                        <p>"One Tap Lifeline" is a Flutter app. It is a safety app build for users. It helps the person in emergency to call his trusted friends, to message his location, search for diﬀerent helpline numbers. </p>
+                    </div>
+                    <div class="card">
+                        <img src="images/code.svg" alt="">
+                        <h2>Portfolio</h2>
+                        <p>Created this portfolio from scratch using HTML 5, CSS 3 and JavaScript. Used material design and modern UI/UX. </p>
+                    </div>
+                    <div class="card">
+                        <img src="images/news.svg" alt="">
+                        <h2>News App</h2>
+                        <p>This application is made with API fetching, modern ﬂutter SDK, admob, and MVVM architecture. </p>
+                    </div>
+                    <div class="card">
+                        <img src="images/path.svg" alt="">
+                        <h2>Path Finder App</h2>
+                        <p>It is a desktop application developed using python (Pygame). It basically provides the shortest path between two points in a grid simulating real world Maps using diﬀerent Algorithms.
+                        </p>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+    
+        <section id="work-experience" class="experience-header">
+            <h1>Work Experience</h1>
+            <p>Experience includes internships, freelance and full-time employments.</p>
+            <button class="btn btn-primary" type="submit" onclick="window.open('./files/Resume.pdf')">DOWNLOAD CV</button>
+        </section>
+    
+        <section class="experience">
+            <div class="container">
+                <div class="slider">
+                    <div class="slide">
+                        <h1 class="section-heading">Software <span>Engineer</span> Intern</h1>
+                        <p>NCR Corporation India Pvt. Ltd.</p>
+                        <img src="./images/ncr.png" alt="">
+                        <p>Working on the company's one of the futuristic retail product "Emerald" along with MVVM and MVC architecture. As an intern learning and embedding features using Microsoft Technologies (C#, ASP.NET, TFS, etc) in the product along with a well-experienced team.</p>
+                        <span>Feb, 2021 &nbsp - &nbsp Present</span>
+                    </div>
+                    <div class="slide">
+                        <h1 class="section-heading">Flutter <span>Developer</span> Intern</h1>
+                        <p>Naaniz Pvt. Ltd.</p>
+                        <img src="./images/naaniz.jfif" alt="">
+                        <p>Developed features for the company's main mobile application, which was being build from sratch using Flutter sdk for both Android and IOS platform. Developed multiple screens and reusable elements for different modules.</p>
+                        <span>July, 2020 &nbsp - &nbsp August, 2020</span>
+                    </div>
+                </div>
+                <div class="slider-dots"></div>
+            </div>
+        </section>
+    
+        <section id="contact" class="contact">
+            <div class="container">
+                <h1 class="section-heading">Contact <span>Me</span> </h1>
+                <p class="heading-para">Recruiters can contact me via these services</p>
+                <div class="card-wrapper">
+                    <div class="card">
+                        <img src="./images/phone-2.svg" alt="" srcset="">
+                        <h1>Call Me On</h1>
+                        <h6>+916280020115</h6>
+                    </div>
+                    <div class="card">
+                        <img src="./images/msg.svg" alt="" srcset="">
+                        <h1>Mail Me @</h1>
+                        <h6>ajaypanwar012@gmail.com</h6>
+                    </div>
+                </div>
+    
+                <form action="">
+                    <div class="input-wrap">
+                        <input type="text" placeholder="Your Name*">
+                        <input type="email" placeholder="Your Email*">
+                    </div>
+        
+                    <div class="input-wrap-2">
+                        <input type="text" placeholder="Your Subject*">
+                        <textarea name="" id="" cols="30" rows="5" placeholder="Your Message..."></textarea>
+                    </div>
+        
+                    <div class="btn-wrapper">
+                        <button class="btn btn-primary">
+                            Send message
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    
+        <footer>
+    
+            <h3>Made with <i>Passion</i>. </h3>
+    
+            <div class="footer-socials">
+                <a href="#"><img src="./images/website.svg" alt=""></a>
+                <a href="#"><img src="./images/github.svg" alt=""></a>
+                <a href="#"><img src="./images/facebook.svg" alt=""></a>
+                <a href="#"><img src="./images/instagram.svg" alt=""></a>
+                <a href="#"><img src="./images/twitter.svg" alt=""></a>
+                
+            </div>
+    
+            <div>
+                Copyright 2021 © AP. All Rights Reserved.
+            </div>
+    
+        </footer>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>

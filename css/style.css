@@ -1,0 +1,615 @@
+@import 'utilities.css';
+
+:root{
+    --primary: #3DCFD3;
+    --dark: #161616;
+    --pure: #ffffff;
+    --ternary: #989898;
+    --light: #f2f2f2;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smotthing: antialias;
+}
+
+header{
+    background-color: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px){
+    .container{
+        max-width: 540px;
+    }
+}
+
+@media (min-width: 768px){
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width: 992px){
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1152px;
+    }
+}
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+header nav .left a:hover{
+    color: var(--primary);
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.hero{
+    padding: 3rem 0;
+}
+
+.hero .left img{
+    width: 400px;
+    opacity: 0.8;
+    border-radius: 2%;
+}
+
+.hero .right{
+    color: var(--pure);
+}
+
+.hero .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.hero .right h1{
+    font-size: 3.5rem;
+    font-weight: 100;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+}
+
+.hero .right h1 span{
+    color: var(--primary);
+}
+
+.hero .right p{
+    line-height: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero .right{
+    margin-top: -7rem;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+section.about .about-me-image{
+    height: 500px;
+    border-radius: 2%;
+    opacity: 1;
+}
+
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+section.about h1 span{
+    color: var(--primary);
+}
+
+section.about h3{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+
+section.about p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.9rem;
+    margin-bottom: 2rem;
+}
+
+section.about .social{
+    display: flex;
+}
+
+section.about .social a{
+    background: var(--dark);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 0.4rem;
+    transition: all 0.3s ease;
+}
+
+section.about .social a:hover{
+    background: var(--primary);
+}
+
+section.about .social a img{
+    height: 100%;
+    width: 100%;
+    padding: 0.5rem;
+}
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 1rem;
+    line-height: 0.5rem;
+    font-weight: 400;
+}
+
+.section-heading span{
+    color: var(--primary);
+}
+
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 8rem;
+    text-align: center;
+}
+
+section.projects{
+    background: var(--light);
+}
+
+section.projects .container h1 + p{
+    margin-bottom: 6rem;
+}
+
+section.projects .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem 2rem;
+}
+
+section.projects .card-wrapper .card{
+    background: var(--pure);
+    padding: 1rem 2rem;
+    position: relative;
+    padding-top: 4rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+section.projects .card-wrapper .card:hover{
+    background: var(--dark);
+}
+
+section.projects .card-wrapper .card:hover h2, section.projects .card-wrapper .card:hover p{
+    color: var(--pure);
+}
+
+section.projects .card-wrapper .card img{
+    position: absolute;
+    top: -3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 6rem;
+    border-radius: 5%;
+}
+
+section.projects .card-wrapper .card h2{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.projects .card-wrapper .card p{
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+    line-height: 1.6;
+}
+
+section.experience-header{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/camera.png);
+    color: var(--pure);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
+    padding-bottom: 14rem;
+    padding-top: 5rem;
+}
+
+section.experience-header h1{
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+
+section.experience-header p{
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+}
+
+section.experience-header button{
+    color: var(--dark);
+}
+
+section.experience{
+    margin-top: -1rem;
+}
+
+section.experience .slide{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 12rem;
+
+}
+
+section.experience .slide img{
+    margin-bottom: 2rem;
+    width: 18%;
+    border-radius: 5%;
+}
+
+section.experience .slide p{
+    margin-bottom: 2rem;
+    font-family: 'Lato', sans-serif;
+    color: var(--ternary);
+}
+
+/* section.experience .slide span{
+    font-size: 0.9rem;
+} */
+
+section.experience .slider-dots{
+    margin-top: 3rem;
+}
+
+section.experience .slider-dots .dots{
+    list-style-type: none;
+    display: flex!important;
+    justify-content: center;
+}
+
+section.experience .slider-dots button{
+    font-size: 0%;
+    width: 8px;
+    height: 5px;
+    margin-right: 0.3rem;
+    border: none;
+    outline: none;
+    background: var(--ternary);
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+section.experience .dots li.slick-active button{
+    background: var(--primary);
+    width: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Section : Contact ME */
+
+section.contact{
+    background: var(--light);
+}
+
+section.contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+}
+
+section.contact .container .heading-para{
+    margin-bottom: 2.5rem;
+}
+
+section.contact .card-wrapper .card img{
+    width: 3.5rem;
+}
+
+section.contact .card-wrapper .card h1{
+    font-weight: 400;
+    margin-bottom: 0.3rem;
+}
+
+section.contact .card-wrapper .card h6{
+    font-size: 0.8rem;
+    color: var(--ternary);
+    font-weight: 400;
+}
+
+section.contact .input-wrap{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+section.contact .input-wrap-2{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+}
+
+section.contact input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact input:focus, section.contact .input-wrap-2 textarea:focus{
+    outline: none;
+}
+
+section.contact .input-wrap-2 textarea{
+    font-family: 'Arial', sans-serif;
+    padding: 0.5rem;
+    margin-bottom: 2rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+}
+
+section.contact form .btn-wrapper{
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer{
+    background: var(--dark);
+    text-align: center;
+    padding: 5rem 0;
+    color: var(--pure);
+}
+
+footer h3{
+    margin-bottom: 3rem;
+    font-weight: 400;
+}
+
+footer a img{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+footer .footer-socials{
+    margin-bottom: 2rem;
+    margin-right: -1rem;
+}
+
+footer .footer-socials + div{
+    color: var(--ternary);
+}
+
+/* @media (min-width: 1025px){
+    .hamburger{
+        display: none;
+    }
+} */
+
+.site-main-wrapper{
+    position: relative;
+}
+
+.hamburger{
+    display: none;
+    position: absolute;
+    top: 40px;
+    right: 30px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.hamburger img{
+    width: 1.5rem;
+}
+
+.arrow-up{
+    position: fixed;
+    bottom: 40px;
+    right: 30px;
+    z-index: 11;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.arrow-up img{
+    width: 4rem;
+    border-radius: 50%;
+    box-shadow: rgb(58 116 116) 2px 2px 12px;
+}
+
+.mobile-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1001;
+    background: var(--dark);
+    opacity: 1;
+    height: 100%;
+    width: 100%;
+    padding: 2rem;
+    padding-top: 5rem;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+
+.open{
+    transform: translateX(0);
+}
+
+.times{
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: none;
+    border: none;
+    color: var(--pure);
+    outline: none;
+    cursor: pointer;
+}
+
+.times img{
+    width: 2rem;
+}
+
+.mobile-nav ul{
+    list-style-type: none;
+    margin-top: 20%;
+}
+
+.mobile-nav ul li{
+    margin-bottom: 2rem;
+}
+
+.mobile-nav ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: var(--pure);
+}
+
+@media (max-width: 1024px){
+    header #main-nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .hero .left img{
+        width: 260px;
+    }
+
+    .hero .right h1{
+        font-size: 2.5rem;
+    }
+    
+    .hero{
+        padding-top: 7rem;
+    }
+
+    header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 87%, 0 100%);
+    }
+
+    section.about .about-me-image{
+        height: 358px;
+    }
+}
+
+@media (max-width: 576px){
+    .hero{
+        flex-direction: column;
+    }
+
+    header {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 95%, 0 100%);
+    }
+
+    .hero .right{
+        position: absolute;
+        top: 260px;
+        padding: 0 1rem;
+        padding-bottom: 4.5rem;
+        background: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.8));
+    }
+
+    .hero .left{
+        margin-top: -3rem;
+        margin-right: -9rem;
+    }
+
+    .about-inner-wrap{
+        flex-direction: column;
+    }
+
+    .about .right{
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .about .right .social{
+        justify-content: center;
+    }
+
+    section {
+        padding: 4rem 0;
+    }
+
+    section.projects .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    section.experience-header{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
+        padding-bottom: 8rem;
+    }
+
+    section.experience .slide {
+        padding: 1rem 0rem;
+    }
+
+    section.experience .slide img{
+        width: 22%;
+    }
+
+    section.contact .card-wrapper{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+
+    section.contact .input-wrap {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1.5rem;
+    }
+}

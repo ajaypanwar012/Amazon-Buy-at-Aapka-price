@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="350" height="350" viewBox="0 0 350 350" xml:space="preserve">
+<desc>Created with Fabric.js 1.7.22</desc>
+<defs>
+</defs>
+<g id="icon" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: none; fill-rule: nonzero; opacity: 1;" transform="translate(-1.9444444444444287 -1.9444444444444287) scale(3.89 3.89)" >
+	<circle cx="70.68" cy="19.84" r="5" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+	<path d="M 65.604 90 H 24.396 C 10.944 90 0 79.056 0 65.604 V 24.396 C 0 10.944 10.944 0 24.396 0 h 41.207 C 79.056 0 90 10.944 90 24.396 v 41.207 C 90 79.056 79.056 90 65.604 90 z M 24.396 8 C 15.355 8 8 15.355 8 24.396 v 41.207 C 8 74.645 15.355 82 24.396 82 h 41.207 C 74.645 82 82 74.645 82 65.604 V 24.396 C 82 15.355 74.645 8 65.604 8 H 24.396 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<path d="M 45.248 70.228 c -3.771 0 -7.573 -0.855 -11.111 -2.614 c -1.978 -0.984 -2.785 -3.385 -1.801 -5.363 c 0.983 -1.978 3.385 -2.783 5.362 -1.801 c 6.532 3.248 14.39 1.962 19.55 -3.2 c 6.615 -6.615 6.615 -17.379 0.001 -23.994 c -6.614 -6.614 -17.378 -6.615 -23.993 0 c -5.163 5.162 -6.449 13.019 -3.202 19.55 c 0.984 1.979 0.177 4.38 -1.801 5.363 c -1.977 0.981 -4.378 0.177 -5.362 -1.801 c -4.779 -9.613 -2.888 -21.174 4.708 -28.77 c 9.734 -9.733 25.571 -9.734 35.307 0 c 9.734 9.734 9.734 25.573 0 35.307 C 58.106 67.705 51.722 70.228 45.248 70.228 z" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform=" matrix(1 0 0 1 0 0) " stroke-linecap="round" />
+	<circle cx="45.004999999999995" cy="45.004999999999995" r="9.535" style="stroke: none; stroke-width: 1; stroke-dasharray: none; stroke-linecap: butt; stroke-linejoin: miter; stroke-miterlimit: 10; fill: rgb(255,255,255); fill-rule: nonzero; opacity: 1;" transform="  matrix(1 0 0 1 0 0) "/>
+</g>
+</svg>
