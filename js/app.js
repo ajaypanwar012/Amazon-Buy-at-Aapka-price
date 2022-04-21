@@ -7,6 +7,15 @@ $(document).ready(function(){
     });
 })
 
+var wallet_Amt=1000;
+
+function add(){
+    var input = document.getElementById("Amount_inp").value;
+    wallet_Amt=wallet_Amt+Number(input);
+    document.getElementById("Wallet_amt").innerText=wallet_Amt;
+}
+
+
 let hamburger = document.querySelector('.hamburger');
 let times = document.querySelector('.times');
 let mobileNav = document.querySelector('.mobile-nav');
