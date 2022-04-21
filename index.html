@@ -99,13 +99,19 @@
                         <h2>Monitor</h2>
                         <p>Samsung 24 inches LED 1920 x 1080 Pixels Flat Computer Monitor - Full HD, Super Slim AH-IPS Panel - LF24T352FHWXXL, (Dark Blue, Gray) </p>
                         <div class="input-wrap">
-                            <p>Price: <b>$ 200</b></p>
-                            <form action="">
+                            <p>Price: <b>$ <b id="currentMonitorPrice">200</b></b></p>
+                            <div>
                                 <div class="input-wrap">
                                     <p>Your price: </p>
-                                    <input type="number">
+                                    <input type="number" id="customerMonitorPrice">
                                 </div>
-                            </form>
+                                <div class="btn-wrapper">
+                                    <button type="submit" onclick="getCustomerMonitorPrice()" class="btn btn-primary">
+                                        Buy at this price
+                                    </button>
+                                </div>
+                                <p id="postMonitorPriceSubmit"></p>
+                            </div>
                         </div>
                     </div>
                     <div class="card">
@@ -114,13 +120,19 @@
                         <p>CHEM-AB ENTEREPIRSE Telescopic Tape Measure,Lock Pin & Push Button Retract,Self-Tightening Body Measure,Retractable Accurate Waist Measuring Tape (multicolor)
                         </p>
                         <div class="input-wrap">
-                            <p>Price: <b>$ 25</b></p>
-                            <form action="">
+                            <p>Price: <b>$ <b id="currentTapePrice">25</b></b></p>
+                            <div>
                                 <div class="input-wrap">
                                     <p>Your price: </p>
-                                    <input type="number">
+                                    <input type="number" id="customerTapePrice">
                                 </div>
-                            </form>
+                                <div class="btn-wrapper">
+                                    <button type="submit" onclick="getCustomerTapePrice()" class="btn btn-primary">
+                                        Buy at this price
+                                    </button>
+                                </div>
+                                <p id="postTapePriceSubmit"></p>
+                            </div>
                         </div>
                     </div>
                 
