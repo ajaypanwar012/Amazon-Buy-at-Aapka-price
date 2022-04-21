@@ -215,7 +215,7 @@ section.projects .container h1 + p{
 section.projects .card-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 5rem 2rem;
+    gap: 8rem 2rem;
 }
 
 section.projects .card-wrapper .card{
@@ -254,6 +254,30 @@ section.projects .card-wrapper .card p{
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
     line-height: 1.6;
+    padding-bottom: 1.5rem;
+}
+
+section.projects .input-wrap{
+    display:inline-flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+section.projects form .input-wrap{
+    display: inline-flex;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+section.projects input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    background-color: var(--light);
+    font-size: 0.9rem;
+    width: 8rem;
+    height: 2rem;
 }
 
 section.experience-header{
