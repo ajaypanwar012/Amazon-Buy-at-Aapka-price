@@ -29,4 +29,9 @@ public class BuyAtPriceRequestServiceImpl implements BuyAtPriceRequestService {
         return this.buyAtPriceRequestRepository.save(buyAtPriceRequest);
     }
 
+    @Override
+    public void update(BuyAtPriceRequest buyAtPriceRequest) {
+        buyAtPriceRequest.setDateCreated(LocalDate.now());
+        this.buyAtPriceRequestRepository.save(buyAtPriceRequest);
+    }
 }

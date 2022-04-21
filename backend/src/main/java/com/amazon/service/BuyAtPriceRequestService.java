@@ -13,6 +13,8 @@ public interface BuyAtPriceRequestService {
     @NotNull Iterable<BuyAtPriceRequest> getAllActiveBuyAtPriceRequests();
 
     BuyAtPriceRequest create(@NotNull(message = "The buy at price cannot be null.") @Valid BuyAtPriceRequest buyAtPriceRequest);
+
+    void update(@NotNull(message = "The buy at price cannot be null.") @Valid BuyAtPriceRequest buyAtPriceRequest);
 }
 
 

@@ -2,11 +2,9 @@ package com.amazon.models;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.fasterxml.jackson.annotation.JsonIdentityInfo;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import javax.persistence.*;
 
-import javax.persistence.*;
 import javax.validation.Valid;
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -27,11 +25,10 @@ public class Order {
     @OneToMany(mappedBy = "pk.order")
     @Valid
     private List<OrderProduct> orderProducts = new ArrayList<>();
+    private double totalAmount;
 
-    @Transient
-    public Double getTotalOrderPrice() {
+    public double calculateTotalOrderAmount(List<OrderProduct> orderProducts) {
         double sum = 0D;
-        List<OrderProduct> orderProducts = getOrderProducts();
         for (OrderProduct op : orderProducts) {
             sum += op.getTotalPrice();
         }
@@ -74,5 +71,13 @@ public class Order {
     @Transient
     public int getNumberOfProducts() {
         return this.orderProducts.size();
+    }
+
+    public double getTotalAmount() {
+        return this.totalAmount;
+    }
+
+    public void setTotalAmount(double totalAmount) {
+        this.totalAmount = totalAmount;
     }
 }

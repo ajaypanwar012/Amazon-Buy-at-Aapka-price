@@ -7,6 +7,11 @@ public class OrderProductDto {
     private Product product;
     private Integer quantity;
 
+    public OrderProductDto(Product product, Integer quantity) {
+        this.product = product;
+        this.quantity = quantity;
+    }
+
     public Product getProduct() {
         return product;
     }
