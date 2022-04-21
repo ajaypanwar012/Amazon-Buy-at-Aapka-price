@@ -1,7 +1,7 @@
 @import 'utilities.css';
 
 :root{
-    --primary: #3DCFD3;
+    --primary: #e8bb49;
     --dark: #161616;
     --pure: #ffffff;
     --ternary: #989898;
@@ -80,14 +80,21 @@ header nav .branding{
     margin-right: 3rem;
 }
 
+header nav .branding img{
+    height: 100px;
+    opacity: 0.7;
+    border-radius: 2%;
+}
+
 .hero{
-    padding: 3rem 0;
+    padding: 10rem 0;
 }
 
 .hero .left img{
     width: 400px;
-    opacity: 0.8;
-    border-radius: 2%;
+    height: 400px;
+    opacity: 0.7;
+    border-radius: 4%;
 }
 
 .hero .right{
