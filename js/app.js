@@ -169,20 +169,20 @@ function addOrder(pn,q,a,t)
     //Should be reset via api call
 
     var ProductNameP= document.createElement('p');
-    var textnode = document.createTextNode("Product Name: "+ pn);
+    var textnode = document.createTextNode("Product Name:"+Array(43).fill('\xa0').join('')+pn);
     ProductNameP.appendChild(textnode);
 
     console.log(ProductNameP);
     var quantityP= document.createElement('p')
-    var textnode2 = document.createTextNode("Quantity: "+ q);
+    var textnode2 = document.createTextNode("Quantity:"+ Array(55).fill('\xa0').join('') +q);
     quantityP.appendChild(textnode2);
 
     var TotalAmountP= document.createElement('p')
-    var textnode3 = document.createTextNode("Total Amount: "+ a);
+    var textnode3 = document.createTextNode("Total Amount:"+ Array(45).fill('\xa0').join('') +a);
     TotalAmountP.appendChild(textnode3);
 
     var orderTimeP= document.createElement('p')
-    var textnode4 = document.createTextNode("Ordered At: "+ t);
+    var textnode4 = document.createTextNode("Ordered At:"+ Array(49).fill('\xa0').join('') +t);
     orderTimeP.appendChild(textnode4);
 
     var childdiv = document.createElement('div')

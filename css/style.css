@@ -450,21 +450,22 @@ section.orders .slide{
     flex-direction: column;
     align-items: center;
     padding: 1rem 12rem;
+    margin-top: 3rem;
+    margin-left: 15rem;
 
 }
 
-section.orders .slide img{
-    margin-bottom: 2rem;
-    width: 18%;
-    border-radius: 5%;
-    height: 8rem;
-    width: 14rem;
+section.orders img{
+    margin-top: 4rem;
+    height: 15rem;
+    width: 16rem;
+    margin-left: 27rem;
 }
 
 section.orders .slide p{
     margin-bottom: 2rem;
     font-family: 'Lato', sans-serif;
-    color: var(--ternary);
+    color: var(--dark);
     font-size: 1.05rem;
 }
 
@@ -473,7 +474,7 @@ section.orders .slide p{
 }
 */
 section.orders .slider-dots{
-    margin-top: 3rem;
+    margin-top: 1rem;
 }
 
 section.orders .slider-dots .dots{
