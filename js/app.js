@@ -7,7 +7,7 @@ $(document).ready(function(){
     });
 })
 
-var wallet_Amt=1000;
+let wallet_Amt=1000;
 
 function add(){
     var input = document.getElementById("Amount_inp").value;
@@ -51,14 +51,16 @@ function goUp()
     });
 }
 
-function getCustomerMonitorPrice()
+function getCustomerMonitordetails()
 {
     let currentPrice = Number(document.getElementById("currentMonitorPrice").innerText);
     let customerPrice = Number(document.getElementById("customerMonitorPrice").value);
+    let customerQuantity = Number(document.getElementById("customerMonitorQuantity"));
 
     console.log(currentPrice);
     console.log(customerPrice);
-    
+    console.log(customerQuantity);
+
     if(customerPrice == 0)
     {
         document.getElementById("postMonitorPriceSubmit").style.color = "orange";
@@ -74,13 +76,15 @@ function getCustomerMonitorPrice()
     }
 }
 
-function getCustomerTapePrice()
+function getCustomerTapedetails()
 {
     let currentPrice = Number(document.getElementById("currentTapePrice").innerText);
     let customerPrice = Number(document.getElementById("customerTapePrice").value);
+    let customerQuantity = Number(document.getElementById("customerMonitorQuantity"));
 
     console.log(currentPrice);
     console.log(customerPrice);
+    console.log(customerQuantity);
 
     if(customerPrice == 0)
     {
