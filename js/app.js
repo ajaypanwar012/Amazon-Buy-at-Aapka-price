@@ -1,6 +1,7 @@
 $(document).ready(function(){
     loadBalance();
     loadOrders();
+    configure_slider();
 })
 
 function configure_slider()
@@ -166,7 +167,6 @@ function loadOrders() {
             });
         })
         .catch(error => console.log('There is some error, please check server'));
-    configure_slider();
 }
 
 function addOrder(pn,q,a,t)
