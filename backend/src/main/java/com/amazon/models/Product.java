@@ -15,6 +15,7 @@ public class Product {
     private String imageURL;
     private double price;
     @NotBlank
+    @Column(columnDefinition = "TEXT")
     private String description;
 
     public Product() {
