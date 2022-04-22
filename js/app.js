@@ -1,4 +1,7 @@
 $(document).ready(function(){
+    //addOrder("Jeans", 1, 400, "12:35");
+    //addOrder("Jeans", 1, 400, "12:35");
+
     $('.slider').slick({
         arrows:false,
         dots:true,
@@ -101,3 +104,37 @@ function getCustomerTapedetails()
     }
 }
 
+
+//addOrder("Jeans", 1, 400, "12:35"); can call the addorder() function with the required parameters to add the order details
+
+function addOrder(pn,q,a,t)
+{
+    //Should be reset via api call
+
+    var ProductNameP= document.createElement('p');
+    var textnode = document.createTextNode("Product Name: "+ pn);
+    ProductNameP.appendChild(textnode);
+
+    console.log(ProductNameP);
+    var quantityP= document.createElement('p')
+    var textnode2 = document.createTextNode("Quantity: "+ q);
+    quantityP.appendChild(textnode2);
+
+    var TotalAmountP= document.createElement('p')
+    var textnode3 = document.createTextNode("Total Amount: "+ a);
+    TotalAmountP.appendChild(textnode3);
+
+    var orderTimeP= document.createElement('p')
+    var textnode4 = document.createTextNode("Ordered At: "+ t);
+    orderTimeP.appendChild(textnode4);
+
+    var childdiv = document.createElement('div')
+    childdiv.className = 'slide';
+    childdiv.appendChild(ProductNameP);
+    childdiv.appendChild(quantityP);
+    childdiv.appendChild(TotalAmountP);
+    childdiv.appendChild(orderTimeP);
+
+    document.getElementById("OrderID").appendChild(childdiv);
+
+}
