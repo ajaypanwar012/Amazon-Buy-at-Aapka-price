@@ -134,29 +134,29 @@ section{
     padding: 6rem 0;
 }
 
-section.about .about-me-image{
+section.account .account-me-image{
     height: 400px;
     border-radius: 2%;
     opacity: 1;
 }
 
-section.about h1{
+section.account h1{
     margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
 }
 
-section.about h1 span{
+section.account h1 span{
     color: var(--primary);
 }
 
-section.about h3{
+section.account h3{
     font-size: 1rem;
     margin-bottom: 1rem;
     font-weight: 400;
 }
 
-section.about p{
+section.account p{
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
     line-height: 1.9rem;
@@ -164,11 +164,11 @@ section.about p{
     font-size: 1.2em;
 }
 
-section.about .social{
+section.account .social{
     display: flex;
 }
 
-section.about .social a{
+section.account .social a{
     background: var(--dark);
     display: flex;
     align-items: center;
@@ -180,24 +180,24 @@ section.about .social a{
     transition: all 0.3s ease;
 }
 
-section.about .social a:hover{
+section.account .social a:hover{
     background: var(--primary);
 }
 
-section.about .social a img{
+section.account .social a img{
     height: 100%;
     width: 100%;
     padding: 0.5rem;
 }
 
-section.about .input-wrap{
+section.account .input-wrap{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 1.5rem;
 }
 
-section.about .card-wrapper .card{
+section.account .card-wrapper .card{
     background: var(--pure);
     padding: 1rem 2rem;
     position: relative;
@@ -207,22 +207,22 @@ section.about .card-wrapper .card{
 }
 
 
-section.about .card-wrapper .card img{
+section.account .card-wrapper .card img{
     height: 8rem;
     width: 8rem;
 }
 
-section.about .card-wrapper .card h1{
+section.account .card-wrapper .card h1{
     margin-bottom: 1rem;
     font-size: 1.6rem;
     font-weight: 400;
 }
 
-section.about .card-wrapper .card h6{
+section.account .card-wrapper .card h6{
     font-size: 1.2em;
 }
 
-section.about .btn-wrapper{
+section.account .btn-wrapper{
     text-align: left;
     margin-top: 1rem;
     display: grid;
@@ -250,21 +250,21 @@ section.about .btn-wrapper{
     text-align: center;
 }
 
-section.projects{
+section.products{
     background: var(--light);
 }
 
-section.projects .container h1 + p{
+section.products .container h1 + p{
     margin-bottom: 6rem;
 }
 
-section.projects .card-wrapper{
+section.products .card-wrapper{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 8rem 2rem;
 }
 
-section.projects .card-wrapper .card{
+section.products .card-wrapper .card{
     background: var(--pure);
     padding: 0rem 2rem;
     position: relative;
@@ -274,15 +274,15 @@ section.projects .card-wrapper .card{
 }
 
 
-section.projects .card-wrapper .card:hover{
+section.products .card-wrapper .card:hover{
     background: var(--dark);
 }
 
-section.projects .card-wrapper .card:hover h2, section.projects .card-wrapper .card:hover p{
+section.products .card-wrapper .card:hover h2, section.products .card-wrapper .card:hover p{
     color: var(--pure);
 }
 
-section.projects .card-wrapper .card img{
+section.products .card-wrapper .card img{
     position: absolute;
     top: -3.5rem;
     left: 50%;
@@ -291,74 +291,75 @@ section.projects .card-wrapper .card img{
     border-radius: 5%;
 }
 
-section.projects .card-wrapper .card h2{
+section.products .card-wrapper .card h2{
     font-weight: 400;
     font-size: 1.2rem;
     margin-bottom: 0.5rem;
 }
 
-section.projects .card-wrapper .card p{
+section.products .card-wrapper .card p{
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
     line-height: 1.6;
     padding-bottom: 1.5rem;
 }
 
-section.projects .card-wrapper .card .btn-wrapper{
+section.products .card-wrapper .card .btn-wrapper{
     padding-bottom: 1rem;
 }
 
-section.projects .input-wrap{
+section.products .input-wrap{
     display:inline-flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     margin-bottom: 0.5rem;
 }
 
-section.projects form .input-wrap{
+section.products form .input-wrap{
     display: inline-flex;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
     margin-bottom: 1.5rem;
 }
 
-section.projects input{
+section.products input{
     padding: 0.5rem;
     border: 1px solid var(--light);
     background-color: var(--light);
     font-size: 0.9rem;
-    width: 8rem;
+    width: 7rem;
     height: 2rem;
+    margin-right: 1rem;
 }
 
-section.experience-header{
+section.about-header{
     text-align: center;
     background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/camera.png);
     color: var(--pure);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 80%, 0 100%);
-    padding-bottom: 14rem;
+    padding-bottom: 9rem;
     padding-top: 5rem;
 }
 
-section.experience-header h1{
-    font-size: 2rem;
+section.about-header h1{
+    font-size: 3rem;
     margin-bottom: 0.5rem;
 }
 
-section.experience-header p{
+section.about-header p{
     margin-bottom: 2rem;
     font-family: 'Lato', sans-serif;
 }
 
-section.experience-header button{
+section.about-header button{
     color: var(--dark);
 }
 
-section.experience{
+section.about{
     margin-top: -1rem;
 }
 
-section.experience .slide{
+section.about .slide{
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -367,35 +368,36 @@ section.experience .slide{
 
 }
 
-section.experience .slide img{
+section.about .slide img{
     margin-bottom: 2rem;
     width: 18%;
     border-radius: 5%;
-    height: 7rem;
-    width: 12rem;
+    height: 8rem;
+    width: 14rem;
 }
 
-section.experience .slide p{
+section.about .slide p{
     margin-bottom: 2rem;
     font-family: 'Lato', sans-serif;
     color: var(--ternary);
+    font-size: 1.05rem;
 }
 
-/* section.experience .slide span{
-    font-size: 0.9rem;
-} */
-
-section.experience .slider-dots{
+/*section.about .slide span{
+    font-size: 1.1rem;
+}
+*/
+section.about .slider-dots{
     margin-top: 3rem;
 }
 
-section.experience .slider-dots .dots{
+section.about .slider-dots .dots{
     list-style-type: none;
     display: flex!important;
     justify-content: center;
 }
 
-section.experience .slider-dots button{
+section.about .slider-dots button{
     font-size: 0%;
     width: 8px;
     height: 5px;
@@ -407,7 +409,7 @@ section.experience .slider-dots button{
     cursor: pointer;
 }
 
-section.experience .dots li.slick-active button{
+section.about .dots li.slick-active button{
     background: var(--primary);
     width: 20px;
     transition: all 0.3s ease;
@@ -618,7 +620,7 @@ footer .footer-socials + div{
     .hero .right h1{
         font-size: 2.5rem;
     }
-    
+
     .hero{
         padding-top: 7rem;
     }
@@ -627,7 +629,7 @@ footer .footer-socials + div{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 26% 87%, 0 100%);
     }
 
-    section.about .about-me-image{
+    section.account .account-me-image{
         height: 358px;
     }
 }
@@ -654,16 +656,16 @@ footer .footer-socials + div{
         margin-right: -9rem;
     }
 
-    .about-inner-wrap{
+    .account-inner-wrap{
         flex-direction: column;
     }
 
-    .about .right{
+    .account .right{
         text-align: center;
         margin-top: 2rem;
     }
 
-    .about .right .social{
+    .account .right .social{
         justify-content: center;
     }
 
@@ -671,20 +673,20 @@ footer .footer-socials + div{
         padding: 4rem 0;
     }
 
-    section.projects .card-wrapper{
+    section.products .card-wrapper{
         grid-template-columns: repeat(1, 1fr);
     }
 
-    section.experience-header{
+    section.about-header{
         clip-path: polygon(0 0, 100% 0, 100% 100%, 67% 90%, 0 100%);
         padding-bottom: 8rem;
     }
 
-    section.experience .slide {
+    section.about .slide {
         padding: 1rem 0rem;
     }
 
-    section.experience .slide img{
+    section.about .slide img{
         width: 22%;
     }
 

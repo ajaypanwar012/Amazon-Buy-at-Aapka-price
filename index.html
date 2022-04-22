@@ -24,9 +24,9 @@
             <button class="times"><img src="./images/times.svg" alt="" srcset=""></button>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Products</a></li>
-                <li><a href="#work-experience">My Account</a></li>
+                <li><a href="#account">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">My Account</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
@@ -40,9 +40,9 @@
                         </div>
                         <div>
                             <a href="#">Home</a>
-                            <a href="#about">My Account</a>
-                            <a href="#projects">Products</a>
-                            <a href="#work-experience">About Us</a>
+                            <a href="#account">My Account</a>
+                            <a href="#products">Products</a>
+                            <a href="#about">About Us</a>
                         </div>
                     </div>
                     <div class="right">
@@ -60,17 +60,17 @@
                         <p>Just drop your price and let us buy it for you.
                         </p>
                         <div>
-                            <a class="btn btn-secondary" type="submit" href="#projects">Try it out!</a>
+                            <a class="btn btn-secondary" type="submit" href="#products">Try it out!</a>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
     
-        <section id="about" class="about">
-            <div class="container flex items-center about-inner-wrap">
+        <section id="account" class="account">
+            <div class="container flex items-center account-inner-wrap">
                 <div class="flex-1">
-                    <img class="about-me-image" src="images/jeff-bezos-15.png" alt="">
+                    <img class="account-me-image" src="images/jeff-bezos-15.png" alt="">
                 </div>
                 <div class="flex-1 right">
                     <h1> <span>User</span> Name </h1>
@@ -96,7 +96,7 @@
             </div>
         </section>
     
-        <section id="projects" class="projects">
+        <section id="products" class="products">
             <div class="container">
                 <h1 class="section-heading">
                     <span>Our</span> Products
@@ -108,11 +108,15 @@
                         <h2>Monitor</h2>
                         <p>Samsung 24 inches LED 1920 x 1080 Pixels Flat Computer Monitor - Full HD, Super Slim AH-IPS Panel - LF24T352FHWXXL, (Dark Blue, Gray) </p>
                         <div class="input-wrap">
-                            <p>Price: <b>₹ <b id="currentMonitorPrice">200</b></b></p>
                             <div>
+                                <p>Price: <b>₹ <b id="currentMonitorPrice">20000</b></b></p>
                                 <div class="input-wrap">
                                     <p>Your price: </p>
                                     <input type="text" id="customerMonitorPrice">
+                                </div>
+                                <div class="input-wrap">
+                                    <p>Quantity: </p>
+                                    <input type="Number" id="customerMonitorQuantity">
                                 </div>
                                 <div class="btn-wrapper">
                                     <button type="submit" onclick="getCustomerMonitorPrice()" class="btn btn-primary">
@@ -129,11 +133,15 @@
                         <p>CHEM-AB ENTEREPIRSE Telescopic Tape Measure,Lock Pin & Push Button Retract,Self-Tightening Body Measure,Retractable Accurate Waist Measuring Tape (multicolor)
                         </p>
                         <div class="input-wrap">
-                            <p>Price: <b>₹ <b id="currentTapePrice">25</b></b></p>
                             <div>
+                                <p>Price: <b>₹ <b id="currentTapePrice">250</b></b></p>
                                 <div class="input-wrap">
                                     <p>Your price: </p>
                                     <input type="text" id="customerTapePrice">
+                                </div>
+                                <div class="input-wrap">
+                                    <p>Quantity: </p>
+                                    <input type="Number" id="customerTapeQuantity">
                                 </div>
                                 <div class="btn-wrapper">
                                     <button type="submit" onclick="getCustomerTapePrice()" class="btn btn-primary">
@@ -149,19 +157,18 @@
             </div>
         </section>
     
-        <section id="work-experience" class="experience-header">
+        <section id="about" class="about-header">
             <h1>Buy at Aapka price</h1>
             <p>Just drop your price and let us buy it for you.</p>
         </section>
-    
-        <section class="experience">
+        <section class="about">
             <div class="container">
                 <div class="slider">
                     <div class="slide">
                         <h1 class="section-heading">How <span>it Works</span></h1>
                         <p></p>
                         <img src="./images/fcfs.jpg" alt="">
-                        <p>After you select price below which he would want to purchase the product. This entry is recorded and placed in a queue - ordered by request date-time. When there is change in price of the product, and there are only X quantity of product, only the first X users will get the product. The required amount will be deducted from your wallet, if it contains sufficient balance, else cash on delivery will be the mode of payment.</p>
+                        <p>You Select the Price at which you want to get the product for. This entry is recorded and placed in a queue - ordered by request date-time. When the prices reaches the desired value, and if there are only X quantity, only the first X users will get the product. The required amount will be deducted from your wallet, if it contains sufficient balance, else cash on delivery will be the mode of payment.</p>
                         <span>So What are you waiting for? Go ahead and set you Aapka price!!</span>
                     </div>
                 </div>

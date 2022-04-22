@@ -70,7 +70,7 @@ function getCustomerMonitorPrice()
     }
     else{
         document.getElementById("postMonitorPriceSubmit").style.color = "green";
-        document.getElementById("postMonitorPriceSubmit").innerHTML = "We'll buy this product for you at or less than: $ " + customerPrice;
+        document.getElementById("postMonitorPriceSubmit").innerHTML = "We'll buy this product for you at or less than: ₹ " + customerPrice;
     }
 }
 
@@ -93,7 +93,7 @@ function getCustomerTapePrice()
     }
     else{
         document.getElementById("postTapePriceSubmit").style.color = "green";
-        document.getElementById("postTapePriceSubmit").innerHTML = "We'll buy this product for you at or less than: $ " + customerPrice;
+        document.getElementById("postTapePriceSubmit").innerHTML = "We'll buy this product for you at or less than: ₹ " + customerPrice;
     }
 }
 
