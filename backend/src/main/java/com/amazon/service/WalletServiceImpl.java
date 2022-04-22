@@ -27,4 +27,11 @@ public class WalletServiceImpl implements WalletService {
     public Wallet save(Wallet wallet) {
         return walletRepository.save(wallet);
     }
+
+    @Override
+    public Wallet addMoneyToWallet(long id , double money){
+        Wallet wallet = getWallet(id);
+        wallet.setBalance(wallet.getBalance() + money);
+        return save(wallet);
+    }
 }

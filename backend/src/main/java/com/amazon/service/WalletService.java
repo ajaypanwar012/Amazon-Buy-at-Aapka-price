@@ -10,4 +10,7 @@ public interface WalletService {
     Wallet getWallet(@Min(value = 1L, message = "Invalid Wallet ID.") long id);
 
     Wallet save(Wallet wallet);
+
+    Wallet addMoneyToWallet(long id , double money);
+
 }

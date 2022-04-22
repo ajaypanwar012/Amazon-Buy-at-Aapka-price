@@ -22,8 +22,13 @@ public class WalletController {
     }
 
     @GetMapping
-    @ResponseStatus(HttpStatus.OK)
     public ResponseEntity<Double> list() {
         return new ResponseEntity<>(this.walletService.getWallet(1).getBalance(), HttpStatus.OK);
+    }
+
+    @PostMapping
+    @ResponseStatus(HttpStatus.OK)
+    public ResponseEntity<Double> update(@RequestBody double money) {
+        return new ResponseEntity<>(this.walletService.addMoneyToWallet(1, money).getBalance(), HttpStatus.OK);
     }
 }
