@@ -26,6 +26,13 @@ public class BuyAtPriceRequestServiceImpl implements BuyAtPriceRequestService {
     @Override
     public BuyAtPriceRequest create(BuyAtPriceRequest buyAtPriceRequest) {
         buyAtPriceRequest.setDateCreated(LocalDate.now());
+        BuyAtPriceRequest buyAtPriceRequestExisting = buyAtPriceRequestRepository.findFirstByProductAndStatus(buyAtPriceRequest.getProduct(),
+                BuyAtPriceRequestStatus.ACTIVE.name());
+        if (buyAtPriceRequestExisting != null) {
+            buyAtPriceRequestExisting.setPrice(buyAtPriceRequest.getPrice());
+            buyAtPriceRequestExisting.setQuantity(buyAtPriceRequest.getQuantity());
+            return this.buyAtPriceRequestRepository.save(buyAtPriceRequestExisting);
+        }
         return this.buyAtPriceRequestRepository.save(buyAtPriceRequest);
     }
 
