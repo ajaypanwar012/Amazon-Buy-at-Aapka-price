@@ -2,25 +2,16 @@ package com.amazon.controllers;
 
 import com.amazon.dto.OrderProductDto;
 import com.amazon.models.Order;
-import com.amazon.models.OrderProduct;
-import com.amazon.models.OrderStatus;
 import com.amazon.service.OrderProductService;
 import com.amazon.service.OrderService;
 import com.amazon.service.ProductService;
-import com.amazon.exception.ResourceNotFoundException;
 
-import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.util.CollectionUtils;
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import javax.validation.constraints.NotNull;
-import java.util.ArrayList;
 import java.util.List;
-import java.util.Objects;
-import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/orders")

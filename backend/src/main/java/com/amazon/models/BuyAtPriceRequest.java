@@ -5,7 +5,7 @@ import javax.persistence.*;
 import java.time.LocalDate;
 
 @Entity
-@Table(name = "buyatpricerequests")
+@Table(name = "buy_at_price_requests")
 public class BuyAtPriceRequest {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)

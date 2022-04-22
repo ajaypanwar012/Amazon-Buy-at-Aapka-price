@@ -1,6 +1,5 @@
 package com.amazon.service;
 
-
 import com.amazon.models.OrderProduct;
 import org.springframework.validation.annotation.Validated;
 
