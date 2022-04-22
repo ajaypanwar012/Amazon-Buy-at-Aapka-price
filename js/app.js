@@ -1,13 +1,17 @@
 $(document).ready(function(){
     loadBalance();
     loadOrders();
+})
+
+function configure_slider()
+{
     $('.slider').slick({
         arrows:false,
         dots:true,
         appendDots:'.slider-dots',
         dotsClass:'dots'
     });
-})
+}
 
 function add(){
     var input = document.getElementById("Amount_inp").value;
@@ -162,6 +166,7 @@ function loadOrders() {
             });
         })
         .catch(error => console.log('There is some error, please check server'));
+    configure_slider();
 }
 
 function addOrder(pn,q,a,t)
@@ -173,15 +178,15 @@ function addOrder(pn,q,a,t)
     ProductNameP.appendChild(textnode);
 
     console.log(ProductNameP);
-    var quantityP= document.createElement('p')
+    var quantityP= document.createElement('p');
     var textnode2 = document.createTextNode("Quantity:"+ Array(55).fill('\xa0').join('') +q);
     quantityP.appendChild(textnode2);
 
-    var TotalAmountP= document.createElement('p')
+    var TotalAmountP= document.createElement('p');
     var textnode3 = document.createTextNode("Total Amount:"+ Array(45).fill('\xa0').join('') +a);
     TotalAmountP.appendChild(textnode3);
 
-    var orderTimeP= document.createElement('p')
+    var orderTimeP= document.createElement('p');
     var textnode4 = document.createTextNode("Ordered At:"+ Array(49).fill('\xa0').join('') +t);
     orderTimeP.appendChild(textnode4);
 
@@ -193,5 +198,4 @@ function addOrder(pn,q,a,t)
     childdiv.appendChild(orderTimeP);
 
     document.getElementById("OrderID").appendChild(childdiv);
-
 }
