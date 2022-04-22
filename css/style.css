@@ -448,7 +448,7 @@ section.orders .slide{
     text-align: center;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     padding: 1rem 12rem;
     margin-top: 3rem;
     margin-left: 15rem;

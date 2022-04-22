@@ -1,12 +1,12 @@
 $(document).ready(function(){
+    loadBalance();
+    loadOrders();
     $('.slider').slick({
         arrows:false,
         dots:true,
         appendDots:'.slider-dots',
         dotsClass:'dots'
     });
-    loadBalance();
-    loadOrders();
 })
 
 function add(){
